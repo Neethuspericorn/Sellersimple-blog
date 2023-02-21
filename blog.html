@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="" name="title">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no">
+    <meta content="" name="description">
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel= stylesheet href="css/main.css"/>
+  
+  </head>
+  <body>
+  
+    <div class="outer-main">
+      <!-- Header -->
+      <header id="header">
+        <div class="container-fluid">
+          <div class="nav-menu">
+            <a href="#" class="logo" title="Spericorn-Technology">
+              <img alt="logo" src="img/logo-HEAD-WHITE.svg" height="38" width="120" class="logo-dark" id="logoToggle">
+            </a>
+            <nav>
+              <input type="checkbox" id="show-menu-input-checkbox" role="button">
+              <label for="show-menu-input-checkbox" id="main-menu-toggler" class="flex-container flex-vcenter flex-hcenter">
+                <div id="main-menu-toggler-icon" class="flex-grow"></div>
+              </label>
+              <ul class="menu-ul" id="mainMenu">
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="blog-inner.html">Blog Inner</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Header -->
+      <main>
+        <section class="blog-banner">
+          <div class="banner-text-otr">
+            <div class="banner-lg-title">Blog</div>
+          </div>
+        </section>
+        <section class="blost-list-sec">
+          <div class="sp-container container-custom">
+            <div class="blost-list-row">
+              <div class="sp-row" id="blog-list">
+                <div class="sp-col-lg-4 sp-col-sm-6 article-box-outer">
+                  <div class="article-box">
+                    <div class="img-cvr">
+                      <a href="">
+                        <div class="img-cvr">
+                          <img src="img/blog-1.jpg" alt="Blog List" width="437" height="250">
+                        </div>
+                      </a>
+                    </div>
+                    <article class="article-txt-outer">
+                      <div class="article-txt-box">
+                        <div class="article-title">
+                          <a href="#">Building an intelligent invoice processing solution -Part 02</a>
+                        </div>
+                        <p class="article-det-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</p>
+                      </div>
+                      <div class="more-btn-block">
+                        <a href="blog-inner.html" class="read_more">Read More</span>
+                        </a>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="load-more-btn-row">
+            <button class="load-more-btn" id="load-more-btn" style="display:none;">Load More Posts </button>
+            <img class="loader-img" src="img/ajax-loader.gif" width="250" height="250" alt="Loader">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-section" id="footer-section">
+        <div class="footer-section">
+          <div class="sp-container container-custom sp-d-flex">
+            <div class="footer-top-wrapper wid-out f-logo-block">
+              <div class="footer-col-block footer-otr">
+                <div class="footer-details-cover">
+                  <p class="footer-logo m-0">
+                    <a href="#">
+                      <img src="img/logo-HEAD.svg" alt="development" width="120" height="38">
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-top-wrapper flex-1">
+              <div class="footer-col-block">
+                <div class="social-link">
+                  <div>
+                    <img src="img/facebook.svg" class="csr-ptr" alt="">
+                  </div>
+                  <div>
+                    <img src="img/twiter.svg" class="csr-ptr" alt="">
+                  </div>
+                  <div>
+                    <img src="img/youtube.svg" class="csr-ptr" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right-section">
+          <div class="sp-container container-custom">
+            <div class="copy-right-cover">
+              <div class="copy-text">
+                <p>
+                  Copyrights. All rights reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom-js.js"></script>
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      function add_class_on_scroll() {
+          header.classList.add("fade-in");
+      }
+      function remove_class_on_scroll() {
+          header.classList.remove("fade-in");
+      }
+      window.addEventListener('scroll', function () {
+          scrollpos = window.scrollY;
+          if (scrollpos > 10) {
+              add_class_on_scroll();
+          } else {
+              remove_class_on_scroll();
+          }
+      });
+  
+  </script>
+  </body>
+</html>
